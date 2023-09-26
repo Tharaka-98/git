@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Ex</title>
+<style type="text/css">
+body {
+background-image: url("home background.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+}
+footer {
+background-color:black;
+color: #fff;
+padding: 20px;
+text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+a{
+color:white;
+padding:30px;
+}
+a:hover{
+color:blue;
+}
+
+
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+  margin: auto;
+  margin-top:2cm;
+}
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px; 
+ 
+}
+
+</style>
+</head>
+<body>
+<div class="box-container">
+  <div class="box">
+  <form id="myForm" action="submit.php" method="POST">
+  <table>
+  <tr>
+  <td><label for="name">Name:</label></td>
+  <td><input type="text" id="name" name="name" required></td>
+  </tr>
+  <br>
+  <tr>
+  <td><label for="email">Email:</label></td>
+  <td><input type="email" id="email" name="email" required></td>
+  </tr>
+  <br>
+  <tr>
+  <td><label for="phone">Phone:</label></td>
+  <td><input type="tel" id="phone" name="phone" required></td>
+  </tr><br>
+  <tr>
+  <td><label for="item">Item name:</label></td>
+  <td><input type="text" id="item" name="item" required></td>
+  </tr><br>
+  <tr>
+  <td><label for="quantity">Quantity:</label></td>
+  <td><input type="text" id="quantity" name="quantity" required></td>
+  </tr>
+  </table>
+  <input type="submit" value="Submit">
+</form>
+  </div>
+</div>
+
+
+<script src="resource-validation.js"></script>
+
+<footer>
+<a href="home.html">Home</a>
+<a href="request.html" >Request</a>
+<a href="q.html" >Q&A</a> 
+<a href="about.html">About Us</a>
+<a href="mailto:contact@example.com">Contact Us</a>
+
+</footer>
+</body>
+</html>
